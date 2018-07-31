@@ -1,0 +1,4 @@
+Usage: big-presentation init [opts] <title>
+
+  -h, --help
+      Show this help message

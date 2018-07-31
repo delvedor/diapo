@@ -1,0 +1,4 @@
+Usage: big-presentation offline [opts]
+
+  -h, --help
+      Show this help message

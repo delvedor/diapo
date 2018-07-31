@@ -1,0 +1,10 @@
+Usage: big-presentation compose [opts]
+
+  -t, --theme
+      Specify the theme (default: 'light')
+
+  -T, --title
+      Specify the presentation title (default: 'big')
+
+  -h, --help
+      Show this help message

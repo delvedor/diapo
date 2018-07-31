@@ -1,0 +1,10 @@
+big-presentation command line interface available commands are:
+
+  - init          Create a new big presentation.
+  - serve         Serves up your presentation on an arbitrary unused port.
+  - compose       Writes from a file you've composed in Markdown into html suitable for a big presentation. 
+  - offline       Creates an index.offline.html file with everything that can be included.
+  - version       Prints the version of the cli
+  - help          Prints this message
+
+Launch 'big-presentation help [command]' to learn more about each command.
