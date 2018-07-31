@@ -2,17 +2,15 @@
   "name": "big-presentation",
   "version": "3.5.0",
   "description": "a presentation system for busy messy hackers",
-  "main": "lib/big.js",
+  "main": "template/big.js",
   "scripts": {
-    "test": "stylelint lib/big.css && flow",
-    "doc": "documentation build lib/big.js -o docs/api.md -f md --access=public",
-    "release": "standard-version"
+    "test": "semistandard && stylelint template/big.css && flow",
+    "doc": "documentation build template/big.js -o docs/api.md -f md --access=public",
+    "release": "standard-version",
+    "fix": "semistandard --fix && prettier --write --single-quote \"**/*.js\""
   },
   "bin": {
-    "big-presentation-init": "./bin/big-presentation-init.js",
-    "big-presentation-serve": "./bin/big-presentation-serve.js",
-    "big-presentation-offline": "./bin/big-presentation-offline.js",
-    "big-presentation-compose": "./bin/big-presentation-compose.js"
+    "big-presentation": "cli.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +23,12 @@
     "slides"
   ],
   "author": "Tom MacWright",
+  "contributors": [
+    {
+      "name": "Tomas Della Vedova",
+      "url": "http://delved.org"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tmcw/big/issues"
@@ -35,6 +39,7 @@
     "documentation": "^8.0.0",
     "flow-bin": "^0.75.0",
     "prettier": "^1.1.0",
+    "semistandard": "^12.0.1",
     "standard-version": "^4.0.0",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0"
@@ -47,10 +52,16 @@
   "stylelint": {
     "extends": "stylelint-config-standard"
   },
+  "semistandard": {
+    "ignore": [
+      "/template/highlight.js"
+    ]
+  },
   "dependencies": {
+    "commist": "^1.0.0",
     "cpy": "^7.0.0",
     "ecstatic": "^3.1.1",
-    "get-port": "^3.1.0",
+    "help-me": "^1.1.0",
     "inliner": "^1.12.1",
     "ip": "^1.1.5",
     "marked": "^0.4.0",
