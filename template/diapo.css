@@ -1,28 +1,25 @@
-@font-face {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Rubik'),
-    local('Rubik-Regular'),
-    url('./rubik-v4-latin-regular.woff2') format('woff2'),
-    url('./rubik-v4-latin-regular.woff') format('woff');
-}
+/***** FONTS *****/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+
+/***** COMMON *****/
 
 html {
   height: 100%;
 }
 
 body {
-  font-family: Rubik, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -32,46 +29,24 @@ a {
   border-radius: 6px;
 }
 
-em {
-  font-style: normal;
+.right {
+  text-align: right;
 }
 
-.dark {
-  background: #272c32;
-  color: #fff;
+.center {
+  text-align: center;
+  margin: 0 auto;
 }
 
-.dark em {
-  color: #fadb03;
-}
-
-.light a {
-  color: #0889d1;
-}
-
-.dark a {
-  color: #7cbfe5;
-}
-
-.dark a:hover {
-  background: #4e5b6f;
-}
-
-.light {
-  background: #f5f5f5;
-  color: #34383e;
-}
-
-.light em {
-  color: #d13787;
-}
-
-.light a:hover {
-  color: #0069a4;
+.nobreak {
+  white-space: nowrap;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 div.slide-container {
@@ -87,8 +62,8 @@ div.slide {
   padding: 4%;
 }
 
-div.imageText {
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+div.slide.small {
+  padding: 15%;
 }
 
 /* normally not good, but ok in context of full screen directional navigation */
@@ -144,4 +119,53 @@ body.jump-mode div.slide-container {
 
 body.jump-mode div.slide-container:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/***** THEME *****/
+
+/* Colors:
+ *   Grey: #282c32
+ *   White: #f9f9f9
+ *   Magenta: #e61a7a
+ */
+
+em {
+  font-style: normal;
+  color: #e61a7a;
+}
+
+.dark {
+  background: #282c32;
+  color: #f9f9f9;
+}
+
+.dark a {
+  color: #7cbfe5;
+}
+
+.dark a:hover {
+  background: #4e5b6f;
+}
+
+.light {
+  background: #f9f9f9;
+  color: #282c32;
+}
+
+.light a {
+  color: #0889d1;
+}
+
+.light a:hover {
+  color: #0069a4;
+}
+
+.light div.boxed-em em {
+  color: #282c32;
+  background-color: #e61a7a;
+}
+
+.dark div.boxed-em em {
+  color: #f9f9f9;
+  background-color: #e61a7a;
 }
