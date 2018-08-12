@@ -1,0 +1,13 @@
+Usage: big-presentation pdf [opts]
+
+  -s, --size
+      Specify the slides size (default: '1280x720')
+
+  -f, --file
+      Specify the file name (default: 'slides.pdf')
+
+  -m, --max-slides
+      The number of slides to print (default: 0)
+
+  -h, --help
+      Show this help message

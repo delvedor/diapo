@@ -1,4 +1,7 @@
 Usage: big-presentation serve [opts]
 
+  -p, --port
+      Port to listen on (default: random)
+
   -h, --help
       Show this help message

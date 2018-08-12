@@ -6,5 +6,8 @@ Usage: big-presentation compose [opts]
   -T, --title
       Specify the presentation title (default: 'big')
 
+  -w, --watch
+      Watch on file changes and recompile (default: false)
+
   -h, --help
       Show this help message
