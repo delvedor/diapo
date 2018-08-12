@@ -1,4 +1,4 @@
-Usage: big-presentation serve [opts]
+Usage: diapo serve [opts]
 
   -p, --port
       Port to listen on (default: random)

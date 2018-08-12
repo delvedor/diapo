@@ -1,4 +1,4 @@
-Usage: big-presentation offline [opts]
+Usage: diapo offline [opts]
 
   -h, --help
       Show this help message

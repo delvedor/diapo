@@ -1,10 +1,10 @@
-Usage: big-presentation compose [opts]
+Usage: diapo compose [opts]
 
   -t, --theme
       Specify the theme (default: 'light')
 
   -T, --title
-      Specify the presentation title (default: 'big')
+      Specify the presentation title (default: 'diapo')
 
   -w, --watch
       Watch on file changes and recompile (default: false)

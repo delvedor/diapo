@@ -1,4 +1,4 @@
-Usage: big-presentation pdf [opts]
+Usage: diapo pdf [opts]
 
   -s, --size
       Specify the slides size (default: '1280x720')
