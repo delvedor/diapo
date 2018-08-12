@@ -280,7 +280,6 @@ window.addEventListener('load', function () {
     if (window.location.hash !== n) {
       window.location.hash = n
     }
-    document.title = slideDiv.textContent || slideDiv.innerText
   }
 
   function forward () {
