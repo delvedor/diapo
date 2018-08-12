@@ -1,8 +1,8 @@
 {
   "name": "diapo",
   "version": "0.1.0",
-  "description": "",
-  "main": "template/big.js",
+  "description": "Easy to use, markdown based presentation framework with sane defaults.",
+  "main": "cli.js",
   "scripts": {
     "test": "standard"
   },
@@ -16,8 +16,12 @@
   "keywords": [
     "presentation",
     "system",
-    "slides"
+    "slides",
+    "markdown"
   ],
+  "engines": {
+    "node": ">=8"
+  },
   "author": "Tomas Della Vedova - @delvedor (http://delved.org)",
   "original-author": "Tom MacWright",
   "license": "ISC",
@@ -28,22 +32,16 @@
   "devDependencies": {
     "standard": "^11.0.1"
   },
-  "standard": {
-    "ignore": [
-      "/template/highlight.js"
-    ]
-  },
   "dependencies": {
     "chokidar": "^2.0.4",
     "commist": "^1.0.0",
     "cpy": "^7.0.0",
     "decktape": "^2.8.6",
-    "ecstatic": "^3.1.1",
     "help-me": "^1.1.0",
     "inliner": "^1.12.1",
-    "ip": "^1.1.5",
     "marked": "^0.4.0",
     "minimist": "^1.2.0",
-    "mustache": "^2.3.0"
+    "mustache": "^2.3.0",
+    "serve-handler": "^3.6.2"
   }
 }
