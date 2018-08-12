@@ -18,7 +18,7 @@ diapo command line interface available commands are:
 
   - init          Create a new diapo presentation.
   - serve         Serves up your presentation on an arbitrary unused port.
-  - compose       Writes from a file you've composed in Markdown into html suitable for a diapo presentation.
+  - compile       compiles the markdown into a valid html file
   - offline       Creates an index.offline.html file with everything that can be included.
   - pdf           Prints the pdf version of your slides
   - version       Prints the version of the cli
@@ -28,8 +28,8 @@ Launch 'diapo help [command]' to learn more about each command.
 ```
 
 ## TODO
+- [x] The server should compile the markdown on the fly.
 - [ ] Documentation!
-- [ ] The server should compile the markdown on the fly.
 - [ ] Improve pdf generation.
 - [ ] Add [`update-notifier`](https://www.npmjs.com/package/update-notifier)
 
