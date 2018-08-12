@@ -1,4 +1,4 @@
-Usage: diapo compose [opts]
+Usage: diapo compile [opts]
 
   -t, --theme
       Specify the theme (default: 'light')

@@ -3,5 +3,11 @@ Usage: diapo serve [opts]
   -p, --port
       Port to listen on (default: random)
 
+  -t, --theme
+      Specify the theme (default: 'light')
+
+  -T, --title
+      Specify the presentation title (default: 'diapo')
+
   -h, --help
       Show this help message
