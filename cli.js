@@ -13,6 +13,7 @@ commist.register('init', require('./lib/init'));
 commist.register('serve', require('./lib/serve'));
 commist.register('compose', require('./lib/compose'));
 commist.register('offline', require('./lib/offline'));
+commist.register('pdf', require('./lib/pdf'));
 commist.register('help', help.toStdout);
 commist.register('version', function() {
   console.log(require('./package.json').version);
