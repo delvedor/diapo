@@ -1,61 +1,40 @@
-<p align="center">
-  <a href="https://tommacwright.typeform.com/to/EcYjLf">
-    <img width="460" src='.github/big-survey.png' />
-  </a>
-</p>
+# diapo
 
-<p align="center">
-  <img width="540" src='.github/logo.png' />
-</p>
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 
-<p align="center">
-  <strong>Big.</strong> The antidote to your presentation procrastination.
-</p>
+Easy to use, markdown based presentation framework with sane defaults.
 
-A presentation system that works great for creative, hurried people making
-focused presentations. Stop tweaking fonts and filling slides with text.
-Big is a configuration-free system that naturally encourages good presentation
-design.
+*In a hurry?* Just write your ideas in a markdown file and let `diapo` do the work.<br/>
+*Design addict?* You can easily customize your presentation with plain old css classes.
 
-**Quickstart**
-
-Install big-presentation.
-
-```sh
-$ npm install -g big-presentation
+## Install
+```
+npm i diapo -g
 ```
 
-Create a new presentation.
+## Usage
+```
+diapo command line interface available commands are:
 
-```sh
-$ big-presentation-init all-about-cats
+  - init          Create a new diapo presentation.
+  - serve         Serves up your presentation on an arbitrary unused port.
+  - compose       Writes from a file you've composed in Markdown into html suitable for a diapo presentation.
+  - offline       Creates an index.offline.html file with everything that can be included.
+  - pdf           Prints the pdf version of your slides
+  - version       Prints the version of the cli
+  - help          Prints this message
+
+Launch 'diapo help [command]' to learn more about each command.
 ```
 
-Serve it so you can view it in a web browser.
+## TODO
+- [ ] Documentation!
+- [ ] The server should compile the markdown on the fly.
+- [ ] Improve pdf generation.
 
-```sh
-$ cd all-about-cats
-$ big-presentation-serve
-```
+## Acknowledgements
+This project born as a fork of the awesome [`tmcw/big`](https://github.com/tmcw/big).
 
-Convert a presentation composed in Markdown into serve-able HTML.
+## License
 
-```sh
-$ cd all-about-cats
-$ big-presentation-compose
-```
-
-This will convert an `index.md` file in that presentation directory into an `index.html`.
-
-:tada: :tada: :tada: :tada: :tada:
-
-* [Demo](http://macwright.org/big/demo.html)
-* :blue_book: [User Guide](docs/user-guide.md)
-* :green_book: [API Documentation](docs/api.md)
-* :pencil: [Protips](docs/protips.md)
-* :camera: [Presentations using big](docs/awesome-big.md)
-* :grapes: [Related projects](docs/see-also.md)
-
----
-
-[![Circle CI](https://circleci.com/gh/tmcw/big/tree/gh-pages.svg?style=shield&circle-token=2963848e42fe67b8a66a2ad2d6dd99d05bdde6a4)](https://circleci.com/gh/tmcw/big/tree/gh-pages) [![Greenkeeper badge](https://badges.greenkeeper.io/tmcw/big.svg)](https://greenkeeper.io/)
+See [LICENSE](./LICENSE).
