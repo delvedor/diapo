@@ -11,7 +11,7 @@ const help = require('help-me')({
 
 commist.register('init', require('./lib/init'))
 commist.register('serve', require('./lib/serve'))
-commist.register('compose', require('./lib/compose'))
+commist.register('compile', require('./lib/compile'))
 commist.register('offline', require('./lib/offline'))
 commist.register('pdf', require('./lib/pdf'))
 commist.register('help', help.toStdout)
