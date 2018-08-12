@@ -31,6 +31,7 @@ Launch 'diapo help [command]' to learn more about each command.
 - [ ] Documentation!
 - [ ] The server should compile the markdown on the fly.
 - [ ] Improve pdf generation.
+- [ ] Add [`update-notifier`](https://www.npmjs.com/package/update-notifier)
 
 ## Acknowledgements
 This project born as a fork of the awesome [`tmcw/big`](https://github.com/tmcw/big).
