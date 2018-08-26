@@ -105,11 +105,14 @@ window.addEventListener('load', function () {
 
   var printListener = window.matchMedia('print')
   printListener.addListener(onPrint)
-  document.addEventListener('click', onClick)
   document.addEventListener('keydown', onKeyDown)
   document.addEventListener('touchstart', onTouchStart)
   window.addEventListener('hashchange', onHashChange)
   window.addEventListener('resize', onResize)
+  window.addEventListener('click', mouseMove)
+  window.addEventListener('mousemove', mouseMove)
+  window.addEventListener('mousedown', mouseMove)
+  window.addEventListener('mouseup', mouseMove)
   window.diapo = diapo
 
   console.log(
@@ -405,11 +408,6 @@ window.addEventListener('load', function () {
     })
   }
 
-  function onClick (e) {
-    if (diapo.mode !== 'talk') return
-    if (e.target.tagName !== 'A') go((diapo.current + 1) % diapo.length)
-  }
-
   function onKeyDown (e) {
     if (diapo.mode === 'talk') {
       switch (e.key) {
@@ -542,5 +540,14 @@ window.addEventListener('load', function () {
       height = Math.ceil(width / ASPECT_RATIO)
     }
     resizeTo(slideDivs[diapo.current], width, height)
+  }
+
+  var timeout = null
+  function mouseMove () {
+    clearTimeout(timeout)
+    document.body.style.cursor = 'auto'
+    timeout = setTimeout(() => {
+      document.body.style.cursor = 'none'
+    }, 1000)
   }
 })
