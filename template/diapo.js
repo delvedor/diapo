@@ -9,6 +9,7 @@ window.addEventListener('load', function () {
     )
   }
 
+  const progressBar = document.querySelector('#diapo-progress-bar')
   var body = document.body
   var initialBodyClass = body.className
   var slideDivs = nodeListToArray(document.querySelectorAll('body > div'))
@@ -283,6 +284,14 @@ window.addEventListener('load', function () {
     if (window.location.hash !== n) {
       window.location.hash = n
     }
+    updateProgressBar()
+  }
+
+  function updateProgressBar () {
+    const progress = diapo.current !== diapo.length - 1
+      ? (diapo.current / diapo.length) * 100
+      : 100
+    progressBar.style.width = `${progress}%`
   }
 
   function forward () {

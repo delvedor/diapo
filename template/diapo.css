@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
 }
 
@@ -64,6 +64,20 @@ div.slide {
 
 div.slide.small {
   padding: 15%;
+}
+
+div.slide.copyright-right p:last-child {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 25px !important;
+}
+
+div.slide.copyright-left p:last-child {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  font-size: 25px !important;
 }
 
 /* normally not good, but ok in context of full screen directional navigation */
@@ -121,6 +135,22 @@ body.jump-mode div.slide-container:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+#diapo-progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#diapo-progress-bar {
+  height: 5px;
+  width: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: width 0.5s;
+}
+
 /***** THEME *****/
 
 /* Colors:
@@ -167,6 +197,10 @@ em {
 
 .dark div.boxed-em em {
   color: #f9f9f9;
+  background-color: #e61a7a;
+}
+
+#diapo-progress-bar {
   background-color: #e61a7a;
 }
 
